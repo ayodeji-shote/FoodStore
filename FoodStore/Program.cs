@@ -13,6 +13,7 @@ builder.Services.AddRazorPages();
 // used to configure all the services thats been created 
 // Services is used to access the list of different services.
 // everytime an interface is invoked we will get back a new concrete interface implementation
+//added a new credential 
 builder.Services.AddTransient<IDrinkRepository, MockDrinkRepository >();
 builder.Services.AddTransient<ICategoryRepository, MockCategoryRepository>();
 builder.Services.AddTransient<IFoodRepository, MockFoodRepository>();
