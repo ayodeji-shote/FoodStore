@@ -27,7 +27,7 @@ namespace FoodStore.Data.Models
         // Boolean that determines if the Food will show on the front page or not based on amount bought 
         public bool IsFavorite { get; set; }
         // A value to see if the Food is in stock and if it is more than one then it will be shown in the shop 
-        public int Stock { get; set; }
+        public bool Stock { get; set; }
         // The categoryId and 
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
