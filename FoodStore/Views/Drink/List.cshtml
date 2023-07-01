@@ -1,0 +1,23 @@
+﻿@using FoodStore.Data.ViewModel
+@model DrinkListViewModel
+
+<div>
+    <h2>
+        All Drinks are here
+    </h2>
+</div>
+
+// To test if the view bag is working we have to make a tag then use the at symbol 
+
+<h2> @Model.CurrentCategory</h2>
+@{
+    foreach (var drink in Model.Drinks)
+    {
+        <div>
+            <h4> Drink Name: @drink.Name</h4>
+
+            <p> Price: @drink.Price.ToString("c")</p>
+
+        </div>
+    }
+}

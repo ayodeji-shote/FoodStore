@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace FoodStore.Data.Models
+﻿namespace FoodStore.Data.Models
 {
     public class Drink
     {

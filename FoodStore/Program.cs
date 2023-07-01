@@ -33,11 +33,11 @@ app.UseStaticFiles();
 app.UseDeveloperExceptionPage();
 app.UseStatusCodePages();
 app.UseStaticFiles();
-app.UseMvcWithDefaultRoute();
 app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapRazorPages();
-
+app.MapControllerRoute(
+    name: "drinkList",
+    pattern: "{controller=Drink}/{action=List}/{id?}");
 app.Run();
