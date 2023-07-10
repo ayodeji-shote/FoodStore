@@ -7,13 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.9" />
-    <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.9" />
-    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+    <Folder Include="wwwroot\images\drinks\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Food\" />
+    <PackageReference Include="bootstrap" Version="5.3.0" />
   </ItemGroup>
 
 </Project>

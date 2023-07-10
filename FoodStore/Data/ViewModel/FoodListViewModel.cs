@@ -8,7 +8,7 @@ namespace FoodStore.Data.ViewModel
         // A model to hold the list of Foods 
         public IEnumerable<Food> Foods { get; set; }
         // Used to display the current category of Foods 
-        public string CurrentCategory { get; set; }
+        public string CurrentFoodCategory { get; set; }
 
     }
 }

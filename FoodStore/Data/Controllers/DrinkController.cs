@@ -25,8 +25,8 @@ namespace FoodStore.Controllers
             _drinkRepository = new MockDrinkRepository();
         }
 
-        // First action to return the list of drinks 
-        public ViewResult List()
+        // First action to return the list of drinks, the view result is used to call a view named list
+        public ViewResult DrinkList()
         {
             // Tod display temp data from controller to view use the view bag 
             ViewBag.Name = "Checks if dotnet is valid";
@@ -34,7 +34,7 @@ namespace FoodStore.Controllers
             // The list method is modified to use the view modell instead 
             DrinkListViewModel model = new DrinkListViewModel();
             model.Drinks = _drinkRepository.Drinks;
-            model.CurrentCategory = "DrinkCategory";
+            model.CurrentDrinkCategory = "DrinkCategory";
             return View(model);
         }
     }

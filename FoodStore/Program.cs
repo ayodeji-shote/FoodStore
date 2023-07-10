@@ -39,5 +39,8 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "drinkList",
-    pattern: "{controller=Drink}/{action=List}/{id?}");
+    pattern: "{controller=Drink}/{action=DrinkList}");
+app.MapControllerRoute(
+    name: "foodlist",
+    pattern: "{controller=Food}/{action=FoodList}");
 app.Run();

@@ -1,0 +1,27 @@
+﻿
+<div>
+    <h2>
+        All Drinks are here
+    </h2>
+</div>
+
+// To test if the view bag is working we have to make a tag then use the at symbol 
+
+<h2> @Model.CurrentDrinkCategory</h2>
+@{
+    foreach (var drink in Model.Drinks)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+                <img src="@drink.ImageThumbnailUrl" alt="" />
+                <div class="caption">
+                    <h3 class="pull-right">@drink.Price.ToString("c")</h3>
+                    <h3>
+                    <a>@drink.Name</a>
+                    </h3>
+                    <p>@drink.ShortDescription</p>
+                </div>
+            </div>
+        </div>
+    }
+}

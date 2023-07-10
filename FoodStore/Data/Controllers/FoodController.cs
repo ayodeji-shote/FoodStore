@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FoodStore.Data.Mocks;
 using Microsoft.AspNetCore.Mvc;
+using FoodStore.Data.ViewModel;
 
 namespace FoodStore.Data.Controllers
 {
@@ -25,10 +26,16 @@ namespace FoodStore.Data.Controllers
         }
 
         // First action to return the list of foods 
-        public ViewResult List()
+        public ViewResult FoodList()
         {
-            var foods = _foodRepository.Foods;
-            return View(foods);
+            // Tod display temp data from controller to view use the view bag 
+            ViewBag.Name = "Checks if dotnet is valid";
+            //var foods = _foodRepository.Drinks;
+            // The list method is modified to use the view modell instead 
+            FoodListViewModel model = new FoodListViewModel();
+            model.Foods = _foodRepository.Foods;
+            model.CurrentFoodCategory = "FoodCategory";
+            return View(model);
         }
     }
 }
