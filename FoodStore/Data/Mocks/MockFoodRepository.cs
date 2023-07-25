@@ -18,20 +18,20 @@ namespace FoodStore.Data.Mocks
                         Price = 7.95M, ShortDescription = "A burger is a flat round mass of minced meat or vegetables",
                         LongDescription = "A burger is a flat round mass of minced meat or vegetables, which is fried and often eaten in a bread roll",
                         Category = _categoryRepository.Categories.First(),
-                        ImageUrl = "https://shorturl.at/uGOZ6",
+                        ImageUrl = "https://www.linkpicture.com/q/1000_F_169569546_zaLG8x4tyIu3SDn1jYWXThVpMjCEbn8Q.jpg",
                         Stock = true,
                         IsFavorite = true,
-                        ImageThumbnailUrl = "https://shorturl.at/uGOZ6"
+                        ImageThumbnailUrl = "https://www.linkpicture.com/q/1000_F_169569546_zaLG8x4tyIu3SDn1jYWXThVpMjCEbn8Q.jpg"
                     },
                     new Food {
                         Name = "Tofu-Burger",
                         Price = 7.95M, ShortDescription = "A burger is a flat round mass of minced meat or vegetables, a vegan burger replaces the meat with tofu",
                         LongDescription = "A vegan burger is a hamburger patty that does not contain meat.",
                         Category = _categoryRepository.Categories.First(),
-                        ImageUrl = "https://shorturl.at/fqLNT",
+                        ImageUrl = "https://www.linkpicture.com/q/1000_F_125436420_yyhCbcW6Ck9x2pzh6l9B2Fq9mYnDQy7E.jpg",
                         Stock = true,
                         IsFavorite = true,
-                        ImageThumbnailUrl = "https://shorturl.at/fqLNT"
+                        ImageThumbnailUrl = "https://www.linkpicture.com/q/1000_F_125436420_yyhCbcW6Ck9x2pzh6l9B2Fq9mYnDQy7E.jpg"
                     },
 
                     new Food
@@ -41,10 +41,10 @@ namespace FoodStore.Data.Mocks
                         ShortDescription = "raw greens (such as lettuce) often combined with other vegetables and toppings and served especially with dressing",
                         LongDescription = "raw greens (such as lettuce) often combined with other vegetables and toppings and served especially with dressing",
                         Category = _categoryRepository.Categories.Last(),
-                        ImageUrl = "https://shorturl.at/wDIXY",
+                        ImageUrl = "https://www.linkpicture.com/q/1000_F_60001352_UU9m9FyI9aFwXveVN5iENQqC5DkGDh8Y.jpg",
                         Stock = true,
                         IsFavorite = false,
-                        ImageThumbnailUrl = "https://shorturl.at/wDIXY"
+                        ImageThumbnailUrl = "https://www.linkpicture.com/q/1000_F_60001352_UU9m9FyI9aFwXveVN5iENQqC5DkGDh8Y.jpg"
                     }
                 };
             }

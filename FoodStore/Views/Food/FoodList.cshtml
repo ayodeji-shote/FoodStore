@@ -9,11 +9,17 @@
 @{
     foreach (var food in Model.Foods)
     {
-        <div>
-            <h4> Food Name: @food.Name</h4>
-
-            <p> Price: @food.Price.ToString("c")</p>
-
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <img src="@food.ImageThumbnailUrl" alt="" />
+                <div class="caption">
+                    <h3 class="pull-right">@food.Price.ToString("c")</h3>
+                    <h3>
+                        <a>@food.Name</a>
+                    </h3>
+                    <p>@food.ShortDescription</p>
+                </div>
+            </div>
         </div>
     }
 }
